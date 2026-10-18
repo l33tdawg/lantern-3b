@@ -50,20 +50,25 @@ The [guard README](guard/README.md) and [`guarded_inference.py`](guard/guarded_i
 
 ## Why this exists
 
-SAGE Foundation stewards the specifications and the trust root. SAGE Commons is the fabric that community networks and devices join. Lantern is the first deployment. The model is one piece of that work: local intelligence that keeps a person's knowledge on their device and makes sharing a deliberate act.
-
 A curious mind should not need a better postcode. That line is the whole argument. If the model can answer a useful question in a room with no signal, and keep the answer on the device, the system is doing something worth the effort. If it invents a label meaning or a schedule, the guard and the card should make that visible rather than hide it.
 
-The evaluation and the card are public for the same reason. If the claims are wrong, anyone can check them. If the guard is useful, anyone can reuse it.
+Lantern is the first device built on SAGE Commons, and this model is one piece of it. The evaluation and the card are public for the same reason: if the claims are wrong, anyone can check them. If the guard is useful, anyone can reuse it.
+
+## The project around this model
+
+- [SAGE Foundation](https://sage-foundation.net/) stewards the specifications, the trust root and the public interest around the work.
+- [SAGE Commons](https://sage.ngo/) is the fabric that community networks and devices join, built on MeshCore transport and the SAGE public chain.
+- [Core SAGE project](https://github.com/l33tdawg/sage) is the open implementation the devices and this model build on.
+- [Lantern 3B](https://github.com/l33tdawg/lantern-3b) is this model card, adapter chain, guard and evaluation.
+
+If you are here for the model, start with the [model card](MODEL_CARD.md). If you are here for the project, the core SAGE repo and the Foundation site are the better doors.
 
 ## License
 
 The base model and this adapter chain are non-commercial research artifacts under the Qwen Research License. The guard and evaluation code are Apache-2.0. Read [LICENSE](LICENSE), [LICENSE-QWEN-RESEARCH](LICENSE-QWEN-RESEARCH) and [LICENSING.md](LICENSING.md).
 
-## Links
+## Model links
 
 - [Model card](MODEL_CARD.md)
 - [V81 research preview release](https://github.com/l33tdawg/lantern-3b/releases/tag/v81-research-preview)
-- [SAGE Foundation](https://sage-foundation.net/)
-- [SAGE Commons](https://sage.ngo/)
 
