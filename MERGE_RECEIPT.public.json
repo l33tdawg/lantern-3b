@@ -1,0 +1,22 @@
+{
+  "schema": "sage.lantern.v81-merged-hf-public.v1",
+  "base": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "base_index_sha256": "c7dd78a4c6bea60b51332f1baf37b8f8124ecab2c35395a29a29825bf2619768",
+  "parent_adapters": [
+    {"name": "v72-stock-replay", "sha256": "6c56fe9ca0bf9aa19b1cb9bd5703d8285808020fd0c0270234fa2ed4e3881480"},
+    {"name": "v73-repair", "sha256": "368ff3d22b1f0d1d66051ff74890f23244e2b300251e6f38176f02a469aaf585"},
+    {"name": "v74-repair", "sha256": "03635f29544a613d234777bcac4d30eabac8f356b5459407d235e157bbabb3e3"},
+    {"name": "v75-v58-policy", "sha256": "59d8c4b47aa94b358dd5673ce07bc7d59c9c5ec807ece38d5de1033c461f1ae1"},
+    {"name": "v76-repair", "sha256": "354685f9e6fab9177e4aaf6c4621885612866905436b782b74af896376621ac2"},
+    {"name": "v77-multiturn", "sha256": "ce0a2e141adf1d310d3a680a4e06655f70929c5e2099a07c7322d01d1efddde7"},
+    {"name": "v78-stabilize", "sha256": "ff5b9739c7798158559cdc59dcf0881a9eb63f342c80c1d0343c93806a768a0a"},
+    {"name": "v79-clarify", "sha256": "35e3e7fce23c35ec303d12c25a74f9ff7b76fbe99aff4e5bf8db26f429670074"},
+    {"name": "v79.2-notice", "sha256": "e81a9f8ba06eaf26572865940fa98c9f788d37dd51f061e806a3e67235ee4e2f"},
+    {"name": "v79.6-schema", "sha256": "9cb7b5e23bc55d98c06ff9f9a6ba0123d959c77518f2cbba5b18f050fa34d85d"},
+    {"name": "v81", "sha256": "eddb21695aec95bb72fca99c67c5430619988cb0e2761fd509f523263e1fe077"}
+  ],
+  "merged_hf_safetensors_sha256": "a94aec13c01ea176fb9c467997c4224fe1d0f485e877577848f62140290d00ce",
+  "merged_hf_safetensors_bytes": 7509337686,
+  "keys": 824,
+  "dtypes": ["bfloat16"]
+}

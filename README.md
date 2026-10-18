@@ -35,18 +35,26 @@ Arithmetic is still a weak spot. The `E03_A` tape and strip case sends the raw m
 
 The raw model can also use a quoted public destination instead of the authorized private home, ignore a supplied recall query, or claim that an errored lookup established absence. The guarded path fixes all three. The weights alone do not.
 
-Long-form factual writing, broad world knowledge, open-ended conversation and RK3588 performance are not qualified. There is no merged HF model or device artifact in this repository. The adapter chain runs on the MLX stack; the base weights are not included.
+Long-form factual writing, broad world knowledge and open-ended conversation are not qualified. V81 still invents meanings and cadences outside the guarded cases; the label guard covers a bounded colour vocabulary, not factuality in general. The merged HF weights are reproducible from the adapter chain, and the base weights are not included.
 
 And the license is non-commercial. This is a research artifact, not a product you can ship.
 
 ## Using it
 
 1. Get [Qwen2.5-VL-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct) under its license.
-2. Download the `v81-research-preview` release asset.
+2. Download the adapter bundle from `v81-research-preview`. For the device build, download `v81-rkllm.part-00` through `v81-rkllm.part-02`.
 3. Apply `adapters/00-v72` through `adapters/10-v81` in the order in [`adapters/ORDER.json`](adapters/ORDER.json).
 4. Load the guard from [`guard/`](guard/) and use `guard_action` for saves and recalls. Do not execute a model-authored tool call directly.
 
 The [guard README](guard/README.md) and [`guarded_inference.py`](guard/guarded_inference.py) show the contract. The [model card](MODEL_CARD.md) has the full evaluation, the failure analysis, the training data and the exact hashes.
+
+## The build on the device
+
+The release includes the exact RK3588 artifact running on Unit C, our engineering Lantern. It is the V81 merged model converted to W8A8 opt1 and compiled for 16,384 tokens of context, with 8,192 new tokens per response. Download the three parts, check them against `SHA256SUMS.parts`, and reassemble them with [REASSEMBLE.md](REASSEMBLE.md).
+
+On the live 16k/8192 profile, the full 48-request streaming suite completed without a failed request. Median first-token time was 727 ms and median decode was 7.93 tok/s; the 36 quality prompts measured 647 ms and 7.96 tok/s. Those are latency figures from one unit, not a capability or long-form result.
+
+The server applies the label and interval guards before inference, so a question about an undefined label or interval does not become a confident invention. The artifact, server and guard hashes, plus the Unit C deployment details, are in [MODEL_ARTIFACTS.md](MODEL_ARTIFACTS.md).
 
 ## Why this exists
 
@@ -70,5 +78,7 @@ The base model and this adapter chain are non-commercial research artifacts unde
 ## Model links
 
 - [Model card](MODEL_CARD.md)
+- [Model artifacts and device build](MODEL_ARTIFACTS.md)
+- [Reassemble the RKLLM artifact](REASSEMBLE.md)
 - [V81 research preview release](https://github.com/l33tdawg/lantern-3b/releases/tag/v81-research-preview)
 

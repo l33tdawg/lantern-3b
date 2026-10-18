@@ -11,9 +11,18 @@ the canonical action, values, authorization and execution.
   dispatcher. Execute only this canonical call, never the model's raw text.
 - `response_guards.interval_answer(messages)`: canonicalizes the published
   interval/rate cases.
+- `response_guards.label_answer(messages)`: answers an undefined colour/label
+  question by asking what the label means in this context. It stays out of the
+  way when the conversation supplies a definition.
 - `response_guards.status_text(messages, model_text)`: repairs failed/empty
   lookup absence claims.
 
-The action guard tests are in the main repository at
-`software/runtime/tests/test_action_guard.py` (38 tests).
+In the deployed server the order is interval, label, private-owner refusal,
+status, then the model. A deterministic answer is returned before inference.
+
+The response-guard suite covers the interval, label, status and paragraph
+cases. The action guard tests are in the main repository at
+`software/runtime/tests/test_action_guard.py` (38 tests); the response-guard
+suite at `scripts/tests/test_response_guards.py` currently runs 57 tests plus
+20 subtests.
 
