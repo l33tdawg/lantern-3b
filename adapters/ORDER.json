@@ -1,0 +1,71 @@
+{
+  "base_model": "Qwen2.5-VL-3B-Instruct",
+  "load_order": [
+    {
+      "index": 0,
+      "name": "v72",
+      "path": "adapters/00-v72",
+      "sha256": "6c56fe9ca0bf9aa19b1cb9bd5703d8285808020fd0c0270234fa2ed4e3881480"
+    },
+    {
+      "index": 1,
+      "name": "v73",
+      "path": "adapters/01-v73",
+      "sha256": "368ff3d22b1f0d1d66051ff74890f23244e2b300251e6f38176f02a469aaf585"
+    },
+    {
+      "index": 2,
+      "name": "v74",
+      "path": "adapters/02-v74",
+      "sha256": "03635f29544a613d234777bcac4d30eabac8f356b5459407d235e157bbabb3e3"
+    },
+    {
+      "index": 3,
+      "name": "v75",
+      "path": "adapters/03-v75",
+      "sha256": "59d8c4b47aa94b358dd5673ce07bc7d59c9c5ec807ece38d5de1033c461f1ae1"
+    },
+    {
+      "index": 4,
+      "name": "v76",
+      "path": "adapters/04-v76",
+      "sha256": "354685f9e6fab9177e4aaf6c4621885612866905436b782b74af896376621ac2"
+    },
+    {
+      "index": 5,
+      "name": "v77",
+      "path": "adapters/05-v77",
+      "sha256": "ce0a2e141adf1d310d3a680a4e06655f70929c5e2099a07c7322d01d1efddde7"
+    },
+    {
+      "index": 6,
+      "name": "v78",
+      "path": "adapters/06-v78",
+      "sha256": "ff5b9739c7798158559cdc59dcf0881a9eb63f342c80c1d0343c93806a768a0a"
+    },
+    {
+      "index": 7,
+      "name": "v79-clarify",
+      "path": "adapters/07-v79-clarify",
+      "sha256": "35e3e7fce23c35ec303d12c25a74f9ff7b76fbe99aff4e5bf8db26f429670074"
+    },
+    {
+      "index": 8,
+      "name": "v79-2",
+      "path": "adapters/08-v79-2",
+      "sha256": "e81a9f8ba06eaf26572865940fa98c9f788d37dd51f061e806a3e67235ee4e2f"
+    },
+    {
+      "index": 9,
+      "name": "v79-6",
+      "path": "adapters/09-v79-6",
+      "sha256": "9cb7b5e23bc55d98c06ff9f9a6ba0123d959c77518f2cbba5b18f050fa34d85d"
+    },
+    {
+      "index": 10,
+      "name": "v81",
+      "path": "adapters/10-v81",
+      "sha256": "eddb21695aec95bb72fca99c67c5430619988cb0e2761fd509f523263e1fe077"
+    }
+  ]
+}

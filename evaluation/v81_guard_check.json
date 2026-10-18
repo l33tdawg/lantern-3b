@@ -1,0 +1,22 @@
+{
+  "V58_S13_B": {
+    "raw": "<tool_call>{\"name\":\"sage_remember\",\"arguments\":{\"content\":\"The cream-colored folding gauge is beside the cedar practice board.\",\"type\":\"fact\",\"tags\":[\"public\"],\"domain\":\"community:cloudmint-outline-notes\"}}</tool_call>",
+    "guard_kind": "tool_call",
+    "guard_reason": "canonicalized_model_call",
+    "guarded": "<tool_call>{\"name\":\"sage_remember\",\"arguments\":{\"content\":\"The cream-colored folding gauge is beside the cedar practice board.\",\"type\":\"fact\"}}</tool_call>",
+    "passes_required_private_home": true
+  },
+  "V58_S03_B": {
+    "raw": "The lookup result establishes only no matches for that particular lookup; a successful empty lookup never proves that no memory exists. The folio may exist in your home, but I have not found it.",
+    "guarded": "The lookup failed and returned an error. A failed lookup does not establish absence; it does not prove that no matching memory exists.",
+    "passes_absence_guard": true
+  },
+  "V58_S16_B": {
+    "raw": "What would you like me to look up? The query is incomplete; what term should I use?",
+    "guard": "no save guard applies to a recall action; remains a raw model failure"
+  },
+  "V58_E03_A": {
+    "raw_length": 3869,
+    "guard": "no arithmetic guard applies; remains a raw model failure"
+  }
+}

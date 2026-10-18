@@ -1,0 +1,12 @@
+*.safetensors
+*.rkllm
+*.gguf
+*.bin
+*.zip
+*.tar.gz
+*.log
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example

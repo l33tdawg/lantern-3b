@@ -1,0 +1,819 @@
+{
+  "capture": "work/lantern-curriculum-v80-20261018/captures/v81.jsonl",
+  "sealed": {
+    "cadence_defined": {
+      "pass": 4,
+      "total": 4
+    },
+    "cadence_missing": {
+      "pass": 8,
+      "total": 8
+    },
+    "correction_cadence": {
+      "pass": 2,
+      "total": 2
+    },
+    "correction_history": {
+      "pass": 2,
+      "total": 2
+    },
+    "correction_label": {
+      "pass": 4,
+      "total": 4
+    },
+    "correction_value": {
+      "pass": 8,
+      "total": 8
+    },
+    "grounding_missing": {
+      "pass": 8,
+      "total": 8
+    },
+    "label_defined": {
+      "pass": 12,
+      "total": 12
+    },
+    "label_unknown": {
+      "pass": 16,
+      "total": 16
+    }
+  },
+  "sealed_total": {
+    "pass": 64,
+    "cases": 64
+  },
+  "fresh64": {
+    "pass": 21,
+    "cases": 24
+  },
+  "stock28": {
+    "pass": 28,
+    "cases": 28,
+    "with_extra_metadata": 2
+  },
+  "special": {
+    "V58_E12_A": {
+      "pass": true
+    },
+    "V58_E12_B": {
+      "pass": true
+    },
+    "V80_E13_A": {
+      "pass": false
+    },
+    "V80_E13_B": {
+      "pass": false
+    },
+    "V80_S03_B": {
+      "pass": false
+    }
+  },
+  "items": {
+    "sealed": [
+      {
+        "id": "V81_LABEL_UNKNOWN_01",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The meaning of the glaucous label isn't specified here. What does glaucous mean in the rope walk context?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_02",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The cinnabar tag hasn't been defined in this conversation, so I can't assign it a meaning. What does cinnabar stand for?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_03",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "I don't have a definition for cerise here, so I can't say what it indicates. Can you define it?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_04",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "Mazarine isn't a standardized term in my databases. What does it mean in this context?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_05",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The meaning of the viridian label isn't specified here. What does viridian mean in this context?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_06",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The orpiment tag hasn't been defined in this conversation. What does orpiment mean in this context?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_07",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "I don't have a definition for hematite here, so I can't say what it indicates. Can you define it?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_08",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "Amaranth on the cider bung doesn't have a standardized meaning in my databases. What does it signify in your process?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_09",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The meaning of the peridot label isn't specified here. What does peridot mean in the mill pond?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_10",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The zaffre tag hasn't been defined in the supplied information, so I can't assign it a meaning. What does zaffre stand for?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_11",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "I don't have a definition for bitumen here, so I can't say what it indicates. Can you define it?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_12",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "Fuchsia hasn't been defined in this conversation. What meaning should I use?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_13",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The meaning of the smaragdine label isn't specified here. What does smaragdine mean in the dye vat?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_14",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The minium tag hasn't been defined in the supplied information, so I can't assign it a meaning. What does minium stand for?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_15",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "I don't have a definition for luteolin here, so I can't say what it indicates. Can you define it?"
+      },
+      {
+        "id": "V81_LABEL_UNKNOWN_16",
+        "family": "label_unknown",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "Kermes hasn't been defined in this conversation. What meaning should I use?"
+      },
+      {
+        "id": "V81_LABEL_DEFINED_01",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Scraped after the ice-house leak, as you defined."
+      },
+      {
+        "id": "V81_LABEL_DEFINED_02",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Ready for the signal-hut repair, as you defined."
+      },
+      {
+        "id": "V81_LABEL_DEFINED_03",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Returned to the copper works, as you defined."
+      },
+      {
+        "id": "V81_LABEL_DEFINED_04",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Cleared for salt-shed loading, as you defined."
+      },
+      {
+        "id": "V81_LABEL_DEFINED_05",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Kept for cider-press practice, as you defined."
+      },
+      {
+        "id": "V81_LABEL_DEFINED_06",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Awaiting the aviary inspection, as you defined."
+      },
+      {
+        "id": "V81_LABEL_DEFINED_07",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Reserved for the net-loft run, as you defined."
+      },
+      {
+        "id": "V81_LABEL_DEFINED_08",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Pending the mill-pond count, as you defined."
+      },
+      {
+        "id": "V81_LABEL_DEFINED_09",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Needs a second bindery check, as you defined."
+      },
+      {
+        "id": "V81_LABEL_DEFINED_10",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Held for the rope-walk count, as you defined."
+      },
+      {
+        "id": "V81_LABEL_DEFINED_11",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Scrapped after the ice-house leak, as you defined."
+      },
+      {
+        "id": "V81_LABEL_DEFINED_12",
+        "family": "label_defined",
+        "pass": true,
+        "reason": "definition",
+        "excerpt": "Ready for the signal-hut repair, as you defined."
+      },
+      {
+        "id": "V81_CADENCE_MISSING_01",
+        "family": "cadence_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The check frequency isn't specified here. How often does the mill pond check happen?"
+      },
+      {
+        "id": "V81_CADENCE_MISSING_02",
+        "family": "cadence_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The schedule for the signal hut check isn't provided. How often does it happen?"
+      },
+      {
+        "id": "V81_CADENCE_MISSING_03",
+        "family": "cadence_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The supplied information doesn't give the tool loft check frequency. How often does it happen?"
+      },
+      {
+        "id": "V81_CADENCE_MISSING_04",
+        "family": "cadence_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The check frequency isn't specified here. How often does the pattern room check happen?"
+      },
+      {
+        "id": "V81_CADENCE_MISSING_05",
+        "family": "cadence_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The check frequency isn't specified here. How often does the dye vat check happen?"
+      },
+      {
+        "id": "V81_CADENCE_MISSING_06",
+        "family": "cadence_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The schedule for the kiln shed check isn't provided. How often does it happen?"
+      },
+      {
+        "id": "V81_CADENCE_MISSING_07",
+        "family": "cadence_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The schedule for the anchor store check isn't provided. How often does it happen?"
+      },
+      {
+        "id": "V81_CADENCE_MISSING_08",
+        "family": "cadence_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The reed field check schedule isn't provided. How often does it happen?"
+      },
+      {
+        "id": "V81_CADENCE_DEFINED_01",
+        "family": "cadence_defined",
+        "pass": true,
+        "reason": "cadence",
+        "excerpt": "Every fourth Monday."
+      },
+      {
+        "id": "V81_CADENCE_DEFINED_02",
+        "family": "cadence_defined",
+        "pass": true,
+        "reason": "cadence",
+        "excerpt": "Every 13 days."
+      },
+      {
+        "id": "V81_CADENCE_DEFINED_03",
+        "family": "cadence_defined",
+        "pass": true,
+        "reason": "cadence",
+        "excerpt": "Three times each month."
+      },
+      {
+        "id": "V81_CADENCE_DEFINED_04",
+        "family": "cadence_defined",
+        "pass": true,
+        "reason": "cadence",
+        "excerpt": "It runs on the second Saturday of the month."
+      },
+      {
+        "id": "V81_GROUNDING_MISSING_01",
+        "family": "grounding_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The owner of the rope reel isn't specified here. Who owns it?"
+      },
+      {
+        "id": "V81_GROUNDING_MISSING_02",
+        "family": "grounding_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The cost of the salt scoop isn't provided. How much did it cost?"
+      },
+      {
+        "id": "V81_GROUNDING_MISSING_03",
+        "family": "grounding_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The ready date for the copper tag isn't provided. When will it be ready?"
+      },
+      {
+        "id": "V81_GROUNDING_MISSING_04",
+        "family": "grounding_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The location of the net float isn't specified here. Where is it kept?"
+      },
+      {
+        "id": "V81_GROUNDING_MISSING_05",
+        "family": "grounding_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The reason the binding thread was moved isn't given. Why was it moved?"
+      },
+      {
+        "id": "V81_GROUNDING_MISSING_06",
+        "family": "grounding_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The next step for the aviary perch isn't specified. What should happen next?"
+      },
+      {
+        "id": "V81_GROUNDING_MISSING_07",
+        "family": "grounding_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The signer of the ice hook note isn't specified here. Who signed it?"
+      },
+      {
+        "id": "V81_GROUNDING_MISSING_08",
+        "family": "grounding_missing",
+        "pass": true,
+        "reason": "missing-ask",
+        "excerpt": "The number of cider bungs left isn't provided. How many do you have?"
+      },
+      {
+        "id": "V81_CORR_VALUE_01",
+        "family": "correction_value",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "The code is Z-507."
+      },
+      {
+        "id": "V81_CORR_VALUE_02",
+        "family": "correction_value",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "The amount is 28 crowns."
+      },
+      {
+        "id": "V81_CORR_VALUE_03",
+        "family": "correction_value",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "The date is 11 August."
+      },
+      {
+        "id": "V81_CORR_VALUE_04",
+        "family": "correction_value",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "The owner is Saoirse."
+      },
+      {
+        "id": "V81_CORR_VALUE_05",
+        "family": "correction_value",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "The amount is 41 crowns."
+      },
+      {
+        "id": "V81_CORR_VALUE_06",
+        "family": "correction_value",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "The date is 26 September."
+      },
+      {
+        "id": "V81_CORR_VALUE_07",
+        "family": "correction_value",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "The code is Z-619."
+      },
+      {
+        "id": "V81_CORR_VALUE_08",
+        "family": "correction_value",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "The amount is 15.5 crowns."
+      },
+      {
+        "id": "V81_CORR_LABEL_01",
+        "family": "correction_label",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "It means held for the rope-walk count."
+      },
+      {
+        "id": "V81_CORR_LABEL_02",
+        "family": "correction_label",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "Cinnabar means ready for the signal-hut repair."
+      },
+      {
+        "id": "V81_CORR_LABEL_03",
+        "family": "correction_label",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "Returned to the copper works."
+      },
+      {
+        "id": "V81_CORR_LABEL_04",
+        "family": "correction_label",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "Mazarine means cleared for salt-shed loading."
+      },
+      {
+        "id": "V81_CORR_CADENCE_01",
+        "family": "correction_cadence",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "It runs every 15 days."
+      },
+      {
+        "id": "V81_CORR_CADENCE_02",
+        "family": "correction_cadence",
+        "pass": true,
+        "reason": "current",
+        "excerpt": "It runs each Monday and Friday."
+      },
+      {
+        "id": "V81_CORR_HISTORY_01",
+        "family": "correction_history",
+        "pass": true,
+        "reason": "history",
+        "excerpt": "Old: Z-724. Current: Z-730."
+      },
+      {
+        "id": "V81_CORR_HISTORY_02",
+        "family": "correction_history",
+        "pass": true,
+        "reason": "history",
+        "excerpt": "Old: 3 October. Current: 10 October."
+      }
+    ],
+    "fresh64": [
+      {
+        "id": "V58_S01_A",
+        "pass": true,
+        "reason": "pending"
+      },
+      {
+        "id": "V58_S01_B",
+        "pass": true,
+        "reason": "committed"
+      },
+      {
+        "id": "V58_S02_A",
+        "pass": true,
+        "reason": "failed"
+      },
+      {
+        "id": "V58_S02_B",
+        "pass": true,
+        "reason": "committed"
+      },
+      {
+        "id": "V58_S03_A",
+        "pass": true,
+        "reason": "success"
+      },
+      {
+        "id": "V58_S03_B",
+        "pass": false,
+        "reason": "error"
+      },
+      {
+        "id": "V58_S04_A",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S04_B",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S05_A",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S05_B",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S06_A",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S07_B",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S08_B",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S09_A",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S09_B",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S10_A",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S10_B",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S11_A",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S11_B",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S12_A",
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "id": "V58_S13_B",
+        "pass": false,
+        "reason": "unexpected domain"
+      },
+      {
+        "id": "V58_S15_A",
+        "pass": true,
+        "reason": "error"
+      },
+      {
+        "id": "V58_S15_B",
+        "pass": true,
+        "reason": "committed"
+      },
+      {
+        "id": "V58_S16_B",
+        "pass": false,
+        "reason": "wrapper/name"
+      }
+    ],
+    "stock28": [
+      {
+        "id": "V56_V55_RC_001_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_002_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_003_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_004_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_005_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_006_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_007_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_008_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_009_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_010_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_011_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_012_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_013_A2",
+        "pass": true,
+        "extras": [
+          "confidence"
+        ],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_014_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_016_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_017_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_018_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_020_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_021_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_022_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_023_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_024_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_025_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_026_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_027_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_028_A2",
+        "pass": true,
+        "extras": [
+          "confidence"
+        ],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_030_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      },
+      {
+        "id": "V56_V55_RC_032_A2",
+        "pass": true,
+        "extras": [],
+        "reason": "semantic-call"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this research preview, cite the release."
+title: "Lantern 3B V81 Research Preview"
+authors:
+  - name: "SAGE Commons contributors"
+version: "v81-research-preview"
+date-released: "2026-10-18"
+url: "https://github.com/l33tdawg/lantern-3b"
+license: "other"
+license-url: "https://github.com/l33tdawg/lantern-3b/blob/main/LICENSE-QWEN-RESEARCH"
+

@@ -1,0 +1,99 @@
+{
+  "schema": "sage.lantern.v81-curriculum-result.v1",
+  "date": "2026-10-18",
+  "scope": "Host-only synthetic development evidence for the rank-32 balanced V81 candidate. Not device, release, production or general qualification.",
+  "curriculum": {
+    "unique_rows": 2028,
+    "written_rows": 4056,
+    "updates": 2028,
+    "sources": {
+      "labels": 614,
+      "corrections": 380,
+      "v79_6_schema": 285,
+      "v79_8_arithmetic": 170,
+      "v79_2_notice": 22,
+      "v79_clarify": 54,
+      "v46": 503
+    },
+    "sha256": "be3af0b4d771002e9350710aa3fa3b0d85df95acea909e05cb6da8669fd79b44"
+  },
+  "training": {
+    "parent": "V79.6 ten-adapter chain",
+    "rank": 32,
+    "scale": 32.0,
+    "learning_rate": 7e-07,
+    "updates": 2028,
+    "final_reported_loss": 0.007,
+    "adapter_sha256": "eddb21695aec95bb72fca99c67c5430619988cb0e2761fd509f523263e1fe077"
+  },
+  "sealed_v81": {
+    "cases": 64,
+    "stock": 34,
+    "v79_6": 36,
+    "v80": 63,
+    "v81": 64,
+    "prompts_sha256": "efba886a54d6cf654aca6e29597247bf41457c8b7e3174cc1169be5f9d35e736",
+    "references_sha256": "f88597f4ceab04bb31f3a48d72c06855da34f3bb549a699a30cb8aef5eb4e606",
+    "families": {
+      "label_unknown": "16/16",
+      "label_defined": "12/12",
+      "cadence_missing": "8/8",
+      "cadence_defined": "4/4",
+      "grounding_missing": "8/8",
+      "correction_value": "8/8",
+      "correction_label": "4/4",
+      "correction_cadence": "2/2",
+      "correction_history": "2/2"
+    }
+  },
+  "frozen_development": {
+    "fresh64_tool_status": {
+      "stock": "6/24",
+      "v79_6": "21/24",
+      "v80": "17/24",
+      "v81": "21/24"
+    },
+    "v81_raw_failures": ["V58_S03_B", "V58_S13_B", "V58_S16_B"],
+    "stock28_wrapped_actions": "28/28 semantically (2 calls add model-only metadata)",
+    "E12_A_B": "pass both",
+    "E13_A_B": "raw model fails; interval guard handles the published cases",
+    "S03_B": "raw model fails; status guard repairs the errored-lookup prose",
+    "E03_A": "raw model derails into a 3,869-character inconsistent calculation; arithmetic remains unqualified"
+  },
+  "guard_check_v81": {
+    "V58_S13_B": "guard_save canonicalizes to the authorized private-home save with no domain; passes_required_private_home true",
+    "V58_S03_B": "response_guards.status_text repairs to 'a failed lookup does not establish absence'; passes_absence_guard true",
+    "V58_S16_B": "no save guard applies to a recall action; supplied query still ignored by the raw model",
+    "V58_E03_A": "no arithmetic guard applies; raw derailment remains"
+  },
+  "guarded_v81": {
+    "entry_point": "guard_action(request, model_text, routing) with canonical_save, canonical_recall, guard_save, guard_recall, and response_guards.status_text/interval_answer",
+    "sealed": "64/64",
+    "fresh64": "24/24",
+    "stock28": "28/28",
+    "E12_A_B": "2/2",
+    "E13_A_B": "2/2",
+    "S03_B": "1/1",
+    "guard_module_sha256": "50835b209594108abfa864c97bb7b9f0f986a13296e9bc516e9ffe0951413972",
+    "guard_test_sha256": "f4623f4c25990fcbbfa1f0ba53eb85242423e9a7623773ed738e4b535658ae2f",
+    "tests": "38/38 action guard tests pass, including supplied/null recall query, quoted-public-destination, and selected-domain cases"
+  },
+  "assessment": {
+    "improvement": "V81 is the strongest candidate: 64/64 sealed, 21/24 fresh64 (V79.6 level), 28/28 stock actions, E12_A/B clean. The rank-32 balanced mix restored the action/status behavior that V80 lost while keeping the curriculum gains.",
+    "publication_blockers": [
+      "Raw V58_S13_B used the quoted public destination instead of the authorized private home; the guarded path canonicalizes it, bare weights would not.",
+      "Raw V58_S16_B ignores a supplied recall query; the new canonical_recall guard fixes it.",
+      "Raw E03_A derails on the tape/strip arithmetic case; the guarded path clears the action/status/interval checks but no arithmetic guard covers E03_A.",
+      "The base is Qwen2.5-VL-3B under the Qwen Research License (non-commercial); commercial publication needs Alibaba permission."
+    ],
+    "recommendation": "Publish a guarded Lantern research preview, not bare V81 weights. The guarded path is clean on the sealed, fresh64, stock28 and E12/E13/S03 gates; disclose E03_A arithmetic and the non-commercial Qwen Research License. Do not claim general or commercial qualification."
+  },
+  "captures": {
+    "v81_full": "captures/v81.jsonl",
+    "score": "captures/score_v81.json",
+    "guard_check": "captures/v81_guard_check.json",
+    "eval_prompts": "pipeline/eval_prompts_v81.jsonl",
+    "sealed_prompts": "sealed_v81/prompts.jsonl",
+    "sealed_references": "sealed_v81/references.jsonl"
+  }
+}
