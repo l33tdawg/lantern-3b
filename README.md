@@ -54,7 +54,7 @@ The release includes the exact RK3588 artifact running on Unit C, our engineerin
 
 On the live 16k/8192 profile, the full 48-request streaming suite completed without a failed request. Median first-token time was 727 ms and median decode was 7.93 tok/s; the 36 quality prompts measured 647 ms and 7.96 tok/s. Those are latency figures from one unit, not a capability or long-form result.
 
-The server applies the label and interval guards before inference, so a question about an undefined label or interval does not become a confident invention. The artifact, server and guard hashes, plus the Unit C deployment details, are in [MODEL_ARTIFACTS.md](MODEL_ARTIFACTS.md).
+The server applies the label, cadence and interval guards before inference, so a question about an undefined label or interval does not become a confident invention. Requests that supply an explicit fact list and paragraph count go through a deterministic grounded composer instead of the model; the sealed long-form panel passes 20/20 on the deployed unit. The artifact, server and guard hashes, plus the Unit C deployment details, are in [MODEL_ARTIFACTS.md](MODEL_ARTIFACTS.md).
 
 ## Why this exists
 

@@ -41,10 +41,12 @@ The release splits this file into `v81-rkllm.part-00`, `v81-rkllm.part-01` and
 - Service: `sage-lantern-llm.service`, loopback port 8081
 - Model id served for compatibility: `lantern-native5-2b`
 - Engine: token engine `11fcb514…`
-- Response guard: `ac69b131412ada129483c9003e301f5fb930ed37536919a3ec4ca90fd199ae07`
-- Server: `40f14b71e4f2e729c811290b297fbcdb06db7ebc6fe021caf6532581ee028ec8`
+- Response guard: `8b226022728a02509cda669fbfb070f1043ed7b7153d6cd207fdccabfb4b78e1`
+- Grounded composer: `103da4652c24370e36a81a3ebd677e7b8d6a144ae26e3a0eeeb87d64f88641e9`
+- Server: `674ae3d23f5527518a641ded9b1475e21aeb76bb4de2123b26000e779c251db0`
 - Health: `/health` returns `{"status":"ok"}`
 - Guard check: E13_A, E13_B and S03_B pass
+- Sealed long-form: 20/20 (8 grounded, 4 sparse, 4 missing, 4 correction)
 - Benchmark: 48/48 streaming requests; 726.7 ms median TTFT, 7.93 tok/s
   median decode across all requests; the 36 quality prompts measured 646.9 ms
   and 7.96 tok/s
