@@ -4,6 +4,8 @@ A small English model for a computer that fits in your hand.
 
 Lantern is the first device built on SAGE Commons: an offline-first assistant for people and places where the network is thin, expensive, or simply absent. V81 is the research preview of the language model inside it.
 
+The device runtime, touchscreen apps, provisioning tools and offline maps live in the [SAGE Lantern repository](https://github.com/l33tdawg/sage-lantern).
+
 The model is a 3B fine-tune of Qwen2.5-VL-3B-Instruct, distributed as an ordered LoRA chain. It is small on purpose. A Lantern runs on a battery, on a desk, in a room with no data centre behind it. That constraint shapes the data, the answer length, and the decision to put a guard around memory and tool actions.
 
 V81 is not a general assistant. It is a focused English model for short conversation, label and schedule questions, correction continuity, and guarded memory actions. The [model card](MODEL_CARD.md) is honest about where it still fails.
@@ -52,6 +54,8 @@ The [guard README](guard/README.md) and [`guarded_inference.py`](guard/guarded_i
 
 The release includes the exact RK3588 artifact running on Unit C, our engineering Lantern. It is the V81 merged model converted to W8A8 opt1 and compiled for 16,384 tokens of context, with 8,192 new tokens per response. Download the three parts, check them against `SHA256SUMS.parts`, and reassemble them with [REASSEMBLE.md](REASSEMBLE.md).
 
+The device software, product UI, offline maps and acceptance record are in the [SAGE Lantern repository](https://github.com/l33tdawg/sage-lantern).
+
 On the live 16k/8192 profile, the full 48-request streaming suite completed without a failed request. Median first-token time was 727 ms and median decode was 7.93 tok/s; the 36 quality prompts measured 647 ms and 7.96 tok/s. Those are latency figures from one unit, not a capability or long-form result.
 
 The server applies the label, cadence and interval guards before inference, so a question about an undefined label or interval does not become a confident invention. Requests that supply an explicit fact list and paragraph count go through a deterministic grounded composer instead of the model; the sealed long-form panel passes 20/20 on the deployed unit. The artifact, server and guard hashes, plus the Unit C deployment details, are in [MODEL_ARTIFACTS.md](MODEL_ARTIFACTS.md).
@@ -67,6 +71,7 @@ Lantern is the first device built on SAGE Commons, and this model is one piece o
 - [SAGE Foundation](https://sage-foundation.net/) stewards the specifications, the trust root and the public interest around the work.
 - [SAGE Commons](https://sage.ngo/) is the fabric that community networks and devices join, built on MeshCore transport and the SAGE public chain.
 - [Core SAGE project](https://github.com/l33tdawg/sage) is the open implementation the devices and this model build on.
+- [SAGE Lantern](https://github.com/l33tdawg/sage-lantern) is the product repository: device runtime, touchscreen apps, provisioning, offline maps and the engineering record.
 - [Lantern 3B](https://github.com/l33tdawg/lantern-3b) is this model card, adapter chain, guard and evaluation.
 
 If you are here for the model, start with the [model card](MODEL_CARD.md). If you are here for the project, the core SAGE repo and the Foundation site are the better doors.
